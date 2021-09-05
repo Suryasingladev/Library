@@ -1,0 +1,861 @@
+
+*{
+          width: 0;
+          padding: 0;
+        
+}
+body{
+          background-color: rgb(231, 225, 225);
+          overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar-div{
+          background-color: white;
+          width: 100vw;
+          z-index: 0;
+        
+}
+.social_media-div{
+  width: 100%;
+  height: 6vh;
+  background-color: (0,0,0,0);   
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+.social_media-div div{
+  width: 40%;
+  height: 100%;
+  /* background-color: rgb(12, 144, 161); */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5vw;
+}
+.social_media-div div a{
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.2vw;
+  margin-right: 1.2vw;
+}
+.synbols{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.synbols:hover{
+  cursor: pointer;
+}
+.nav-bar{
+    width: 100%;
+    height: 8vh;
+    /* background-color: rgb(228, 90, 90); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+          width: 60%;
+          /* background-color: burlywood; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+.logo img{
+  width: 90%;
+  /* height: 80%; */
+  padding: 10px;
+  margin-bottom: 3vh;
+
+} 
+.pages{
+          width: 60%;
+          height: 100%;
+          /* background-color: chartreuse; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+.pages ul{
+          display: flex;
+          margin: auto;
+          /* background-color: chocolate; */
+          width: 70%;
+}
+.pages ul li{
+          padding: 3px;
+          list-style: none;
+          margin-left: 6vw;
+          
+}
+#home_li{
+          margin-left: 2vw;
+}
+.pages ul li a{
+          text-decoration: none;    
+          font-size: 1.2rem; 
+          color: black;
+          font-weight: bold;
+          font-family: 'Roboto Slab', serif;
+}
+.pages ul li a:hover{
+  color: orangered;
+}
+.condition{
+  margin-left: 1.5vw;
+}
+.search{
+          width: 8%;
+          /* background-color: red; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 10vw;
+}
+.search img{ 
+          width: 100%;
+          background-color: white;
+          /* border: 1px solid black; */
+
+}
+.search img:hover{ 
+          cursor: pointer;
+}
+
+/*    ----------------------------------------- Dialog bar */
+.sidemenu {
+          position: fixed;
+          top: 0;
+          left: 25%;
+          /* margin-top: 20px; */
+          height: 0%;
+          width: 50%;
+          background-color: rgb(255, 255, 255);
+          z-index: 4;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          box-shadow: 1px 4px 10px 0px rgba(60, 128, 128, 0.589);
+          transition: all 0.5s;
+          border-radius: 10px;
+        }
+        /*  full back */
+.back-box-black{
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.6) ;
+          position: fixed;
+          top: 0;
+          z-index: 3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display:none;
+         }
+         .sidemenu{
+          box-shadow: 1px 4px 10px 0px rgba(7, 15, 15, 0.781);
+      
+         }
+         .sidemenu span{
+                  width: 30px;
+                  height: 30px;
+                    position: absolute;
+                   right: 5px;
+                   text-align: center;
+                  margin: auto;
+                   /* background-color: blue; */
+                   font-weight: 700;        
+         }
+         .sidemenu span:hover{
+                   cursor: pointer;
+         }
+         .sidemenu div{
+          padding: 10px;
+          font-weight:450;
+          font-family: cursive;
+          /* background-color: aqua; */
+
+         }
+         .sidemenu div input{
+          padding: 10px;
+          width: 35vw;
+          border-radius: 8px;
+          border: none;
+          outline: none;
+          box-shadow: 1px 4px 10px 0px rgba(7, 15, 15, 0.589);
+        }
+        .sidemenu div ul li{
+          width: 30vw;
+          color: rgb(143, 141, 145);
+          /* background-color: brown; */
+        }
+        .sidemenu div ul li:hover{
+          color: black;
+          font-weight: 600;
+          cursor: pointer;
+          /* background-color: brown; */
+        }
+         .search-btn{
+                   width: 100%;
+                   display: flex;
+                   background: linear-gradient(to right,  #eb6f27 0%,#df1414 100%);
+                   justify-content: center;
+                   border-top: 0.5px solid rgba(128, 128, 128, 0.349);
+                   border-bottom: 0.5px solid rgba(128, 128, 128, 0.349);
+                   align-items: center;
+                   box-shadow: 1px 4px 10px 0px rgba(7, 15, 15, 0.589);
+
+         }
+         .search-btn .btn{
+                   width: 13%;
+                   background-color: black;
+                   border-color: black;
+                   color: white;
+                   box-shadow: 1px 4px 10px 0px rgba(7, 15, 15, 0.589);
+                   margin: 10px;
+         }
+       
+         /* -------------------------------Baner */
+         .baner-div{
+           width: 100vw;
+           height: 70vh;
+           /* background-image: url("../images/studentstudying.jpg"); */
+           /* background-color: rgba(9, 114, 155, 0.3); */
+           /* background-color: violet; */
+           background-position: center; /* Center the image */
+           background-repeat: no-repeat; /* Do not repeat the image */
+           background-size: cover; /* Resize the background image to cover the entire container */
+           display: flex;
+           z-index: 0;
+           justify-content: center;
+           align-items: center;
+           /* background-color: orchid; */
+         }
+         .baner-div-div{
+           width: 95%;
+           height: 85%;
+           background: linear-gradient(to right,  #eb6f27 0%,#df1414 100%);
+           display: flex;
+           flex-direction: column;
+           z-index: 0;
+           justify-content: center;
+           align-items: center;
+           backdrop-filter: blur(5px);
+           box-shadow: 1px 4px 10px 0px rgba(60, 128, 128, 0.589);
+          padding: 10px;
+          }
+          .circle-heading{
+            width: 100%;
+            background-color: black;
+            border-bottom: 1px solid black;
+            color: whitesmoke;
+            border-color: rgba(245, 245, 245, 0.5);
+          }
+          .circle-heading h2{
+            width: 100%;
+            font-family: 'Abril Fatface', cursive;
+            color: orangered;
+            text-align: center;
+          }
+         .baner-div .center-div{
+           width: 100%;
+           height: 100%;
+           /* background-color: rgb(56, 16, 16); */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin: 5px;
+         } 
+       
+         #other-circle ,  #other-circle1 ,#other-circle2 ,  #other-circle3, #other-circle4 {
+          position: absolute;
+          /* top:100%; */
+          left: 0%;
+          margin-top: 20px;
+          height: 0%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 12%;
+          /* height: 20%; */
+          background-color:  whitesmoke;
+          z-index: 0;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          box-shadow: 1px 4px 10px 0px rgba(9, 29, 29, 0.589);
+          transition: all 1s;
+          border-radius: 50%;
+         }
+         #other-circle{
+          background-image: url("../images/computer.png");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */ 
+        }
+         #other-circle1{
+          background-image: url("../images/maths.jpg");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+         
+         }
+         #other-circle2{
+          background-image: url("../images/chemistry.jpg");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+         
+         }
+         #other-circle3{
+          background-image: url("../images/zoology.jpg");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+         
+         }
+         #other-circle4{
+          background-image: url("../images/physics.jfif");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */         
+         }
+        
+      
+        #other-circle2:hover ,  #other-circle3:hover, #other-circle:hover ,  #other-circle1:hover,#other-circle4:hover {
+          cursor: pointer;
+          box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.925);
+          transition: all 0.6s;
+          margin-bottom: 5vh;
+        }
+
+        
+
+       /* -------------------Orignal Baner  */
+      
+       .baner-background{
+         width: 100vw;
+         height:85vh;
+         background-image: url("../images/back1.jpg");
+         background-position: center; /* Center the image */
+         background-repeat: no-repeat; /* Do not repeat the image */
+         background-size: cover; /* Resize the background image to cover the entire container */
+         display: flex;
+       }
+       .baner-background div{
+        width: 100%;
+        height: 100%;
+        /* background-color: brown; */
+        display: flex;
+        background: rgba(0, 0, 0, 0.568);
+        backdrop-filter: blur(5px);
+       
+      }
+       .baner-background .part1 ,.baner-background .part2{
+        width: 50%;
+        height: 100%;
+        /* background-color: rgb(187, 178, 166); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       }
+     
+       .part2 img{
+        position: absolute;
+        /* top: 0px; */
+        right: 0px;
+        /* margin-left: 50vw; */
+        width: 30vw;
+        height: 70vh;
+        opacity: 0;
+        /* background-color: rgba(204, 201, 201, 0.055); */
+        z-index: 3;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        /* box-shadow: 0 4px 10px 0 rgba(60, 128, 128, 0.842); */
+        transition: all 1.5s;
+       }
+       .part1 h2{
+        /* background-color: chocolate; */
+        /* top: 25vh; */
+        position: absolute;
+        text-align: center;
+        color: whitesmoke;
+        display: flex;      
+        justify-content:  center;
+        align-items: center; 
+        left: 0px;
+        /* background-color: teal; */
+        width: 30vw;
+        font-size: 3rem;
+        font-family: 'Roboto Slab', serif;
+        opacity: 0;
+        z-index: 3;       
+        transition: all 1.8s;
+        transform: translate(-50%,-50%);
+        
+       }
+       .part1 p{
+        /* background-color: chocolate; */
+        color: whitesmoke;
+        margin-top: 42vh;
+        text-align: center;
+        font-size: 0.8rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 0.9rem;
+        width: 35vw;
+        opacity: 0;
+        z-index: 3;      
+        padding: 5vw;
+        text-align: center; 
+        transition: all 1.8s;
+       }
+
+
+       /* Time and Card-Images */
+       .timediv-container{
+         width: 100vw;
+         height: 80vh;
+         margin-top: 0px;
+         margin-bottom: 10vh;
+         background-color: white;
+        }
+        .timediv-container-div{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* background-color: green; */
+       }
+       .timediv-container-div-card{
+        width: 90%;
+        height: 85%;
+        /* background-color: greenyellow; */
+        box-shadow: 0 4px 10px 0 rgba(15, 36, 36, 0.842);
+        display: flex;
+        }
+       .timediv-img{
+         width: 75%;
+         height: 100%;
+         background-color: hotpink;
+         background-image: url("../images/tablebooks.jpg");
+         background-position: center; /* Center the image */
+         background-repeat: no-repeat; /* Do not repeat the image */
+         background-size: cover; /* Resize the background image to cover the entire container */   
+       
+        }
+        .timediv-img div{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(21, 9, 32, 0.205);
+          backdrop-filter: blur(2px);
+         }
+        .timediv-img h2{
+          width: 50%;
+          height: 40%;
+          text-align: center;
+          /* background-color: palegoldenrod; */
+          font-family: 'Roboto Slab', serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .timediv-img p{
+          width: 70%;
+          text-align: center;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          /* background-color: orchid; */
+        }
+
+       .timediv-timeCard{
+         width: 25%;
+         height: 100%;
+         background-color: black;
+       }
+       .timediv-timeCard-imgdiv{
+         width: 100%;
+         height: 40%;
+         /* background-color: blueviolet; */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .timediv-timeCard-imgdiv h3{
+         width: 80%;
+         text-align: center;
+         color: orangered;
+         padding: 20px;
+         font-family: 'Abril Fatface', cursive;
+         border-bottom: 2px solid orangered;
+       }
+      
+       .timediv-timeCard-time{
+         width: 100%;
+         height: 60%;
+         /* overflow-x: auto; */
+         overflow-y: auto;
+         /* background-color: cadetblue; */
+       }
+       .timediv-timeCard-time div{
+         width: 100%;
+         /* background-color: yellow; */
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 20px;
+       }
+       .timediv-timeCard-time div h5{
+         width: 100%;
+         text-align: center;
+         color: white;
+         /* background-color: yellowgreen; */
+         margin: 0;
+       }
+       .timediv-timeCard-time div p{
+        width: 100%;
+        text-align: center;
+        color: rgb(170, 167, 167);
+       
+        /* background-color: #2F5BB7; */
+        margin: 0;
+      }
+       /* --------------------------- News-Section */
+
+.dailyNews-section{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: darkseagreen; */
+    background-image: url("../images/studentstudying.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* overflow-y: auto; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.news-big-div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.568);
+  backdrop-filter: blur(5px);
+  padding: 2vw;
+}
+.card-news{
+  width: 49%;
+  /* height: 30vh; */
+  background-color: darkviolet;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  display: flex;
+  border-radius: 5px;
+  transition: all 1s;
+  box-shadow: 1px 4px 10px 0px rgba(34, 33, 33, 0.322);
+}
+
+.card-news:hover{
+  cursor: pointer;
+  box-shadow: 2px 6px 12px 0px rgba(34, 33, 33, 0.897);
+}
+.card-news{
+  margin-top: 0;
+  background-color: rgb(10, 158, 109);
+}
+.card-news:hover .card-news-div2 {
+  background-color: whitesmoke;
+}
+.card-news-div1{
+  width: 40%;
+  /* height: 100%; */
+  background-color: deepskyblue;
+  border-radius: 5px 0px 0px 5px;
+}
+.card-news-div1 img{
+  width: 100%;
+  height: 100%;
+}
+.card-news-div2{
+  width: 60%;
+  /* height: 100%; */
+  display: flex;
+  transition: all 0.6s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(228, 222, 222);
+  border-radius: 0px 5px 5px 0px;
+}
+.card-news-div2-border{
+  width: 95%;
+  /* height: 90%; */
+  /* background-color: chartreuse; */
+  display: flex;
+  border-left: 4px solid orangered;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-news-div2 .news-text1{
+  width: 100%;
+  text-align: center;
+  color: orangered;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 3px;
+  margin: 0px;
+  font-family: 'Yusei Magic', sans-serif;
+  /* background-color: aquamarine; */
+  /* background-color: orchid; */
+}
+.card-news-div2 h4{
+  width: 100%;
+  font-size: 1.2rem;
+  /* background-color: blueviolet; */
+  text-align: center;
+  margin: 0;
+  /* background-color: rgb(0, 255, 242); */
+}
+.card-news-div2 .news-text2{
+  width: 98%;
+  text-align: center;
+  padding: 10px; 
+  /* background-color: chartreuse; */
+  color: rgb(104, 101, 101);
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  text-align: center;
+  /* background-color: orchid; */
+}
+.card-news-div2-border span{
+  display: inline;
+  margin: 0px;
+  text-align: end;
+  /* background-color: chocolate; */
+  color: rgb(36, 36, 184);
+  font-weight: 600;
+}
+.card-news-div2-border span:hover{
+  cursor: pointer;
+  color: orangered;
+}
+.card-news-div2-border h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* News Dialog */
+.sidemenu1 {
+  position: fixed;
+  bottom: 0;
+  /* margin-top: 20px; */
+  height: 0%;
+  width: 20%;
+  /* margin-bottom: 0px; */
+  left: 15vw;
+  background: linear-gradient(to right,  rgb(9, 44, 90) 0%,rgb(25, 122, 248) 100%);
+  z-index: 4;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: 1px 4px 10px 0px rgba(10, 29, 29, 0.705);
+  transition: all 0.6s;
+  border-radius: 0px 35px 0px 35px;
+  
+}
+.back-box-black{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(141, 23, 23, 0.6) ;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:none;
+ }
+ .sidemenu1 span{
+          width: 30%;
+          height: 7vh;
+          position: absolute;
+          right: 0px;
+          background-color: black;
+          padding-right: 20px;
+          text-align: center;
+          text-align: end;
+          /* background-color: orangered; */
+          font-weight: 700;        
+          color: white;
+ }
+ .sidemenu1 span:hover{
+           cursor: pointer;
+ }
+  .News-Head{
+   width: 70%;
+   height: 7vh;
+   padding: 5px;
+   padding-left: 2vw;
+  font-weight:450;
+  font-size: 1.3rem;
+  background-color: black;
+  font-family: cursive;
+  /* background: linear-gradient(to right,  #eb6f27 0%,#df1414 100%); */
+  color: orangered;
+}
+
+ .news-room-div{
+   /* border-top: 3px solid orangered; */
+   width: 100%;
+   background: linear-gradient(to right,  #eb6f27 0%,#df1414 100%);
+   height: 100%;
+   padding: 5px;
+   overflow-x: scroll;
+   overflow-y: scroll;
+   /* background-color: rgb(184, 171, 29); */
+ }
+ .news-room-div h2{
+   width: 100%;
+   text-align: center;
+   padding-right: 2vw;
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+   border-bottom: 2px solid gray;
+   /* background-color: orchid; */
+   /* box-shadow: 1px 4px 10px 0px rgba(20, 36, 36, 0.733); */
+  /* text-align: center; */
+  }
+ .news-room-div img{
+  float: left;
+  width: 30vw;
+  height: 45vh;
+  margin: 0 10px 0 0;
+  border-radius: 2%;
+  box-shadow: 1px 4px 10px 0px rgba(9, 24, 24, 0.733);
+} 
+.news-room-div .text{
+  width: 100%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  /* line-height: 1.2rem; */
+}
+ 
+/* ---------------------------Footer */
+.footer-section{
+  width: 100vw;
+  height: 60vh;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 17vh;
+}
+.footer-section-maindiv{
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(204, 201, 201); */
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer-section-maindiv div{
+  /* background-color: violet;  */
+  width: 15%;
+}
+.footer-section-maindiv div img{
+  width: 27vw;
+  height: 42vh;
+  margin-left: 10vw;
+  box-shadow: 1px 4px 10px 0px rgba(9, 24, 24, 0.733);
+  border-radius: 50%;
+}
+.footer-section-maindiv div ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: grey; */
+}
+.footer-section-maindiv div ul h5{
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 1.2px 1.2px #585757;
+  font-family: 'Roboto Slab', serif;
+}
+.footer-section-maindiv div ul li{
+  width: 100%;
+  margin-bottom: 2vh;
+  /* background-color: yellow; */
+  text-align: center;
+  list-style: none;
+}
+.footer-section-maindiv div ul li a{
+  width: 100%;
+  /* background-color: greenyellow; */
+  color: rgb(95, 93, 93);
+  text-decoration: none;
+  /* font-family: 'Alegreya Sans', sans-serif; */
+  /* font-family: 'Kanit', sans-serif; */
+  font-family: cursive;
+}
+.footer-section-maindiv div ul li a:hover{
+  color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
